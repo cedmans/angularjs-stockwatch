@@ -1,7 +1,7 @@
 Stockwatch::Application.routes.draw do
   #resources :stocks
   scope :api do
-    resources :stocks, only: [:index], defaults: {format: :json}
+    resources :stocks, defaults: {format: :json}
   end
   root 'watchlist#index'
   # The priority is based upon order of creation: first created -> highest priority.
