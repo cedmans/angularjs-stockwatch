@@ -4,7 +4,9 @@
   <input type="submit" value="Add" />
 </form>
 <div ng-controller='StocksCtrl'>
-  <li ng-repeat="stock in stocks">
-    {{stock.symbol}}, {{stock.name}}
-  </li>
+  <ul>
+    <li ng-repeat="stock in stocks">
+      {{stock.symbol}}, {{stock.name}}
+    </li>
+  </ul>
 </div>
