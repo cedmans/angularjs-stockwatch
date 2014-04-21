@@ -5,6 +5,9 @@ app.factory('Stock', ['$resource', function ($resource) {
   Stock.prototype.all = function () {
     return this.service.query();
   };
+  Stock.prototype.create = function(attr) {
+    return this.service.save(attr);
+  };
   Stock.prototype.delete = function(stId) {
     this.service.remove({stockId: stId});
   };
